@@ -20,7 +20,7 @@ data "azuread_group" "argoreaders" {
 resource "azuread_application" "argocd" {
   display_name = "ArgoCD"
   web {
-    redirect_uris = ["https://argocd.octubre.org.ar/auth/callback"]
+    redirect_uris = ["https://argocd.mydomain.com/auth/callback"]
     implicit_grant {
       access_token_issuance_enabled = false
     }
