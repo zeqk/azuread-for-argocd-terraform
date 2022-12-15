@@ -67,9 +67,6 @@ resource "azuread_application" "argocd" {
   owners = [data.azuread_client_config.current.object_id]
 }
 
-resource "random_uuid" "userrole" {
-}
-
 # Add Enterprise Application
 resource "azuread_service_principal" "argocd" {
   application_id               = azuread_application.argocd.application_id
