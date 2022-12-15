@@ -1,4 +1,4 @@
-# Terraform for configure Azure Active Directory for ArgoCD OIDC integration
+# Configure Azure Active Directory for ArgoCD OIDC Integration with Terraform
 
 References:
 
